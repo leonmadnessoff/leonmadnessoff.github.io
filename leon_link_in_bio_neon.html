@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LEØN | Official Links</title>
+  <meta name="description" content="LEØN — Electronic music artist. Drum’n’Bass | Bass House | EDM. Madness is just the beginning."/>
+  <meta property="og:title" content="LEØN | Official Links" />
+  <meta property="og:description" content="Electronic music artist. Drum’n’Bass | Bass House | EDM." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="LEON-social-preview.jpg" />
+  <meta name="theme-color" content="#0b0f1a" />
+  <style>
+    :root{
+      --bg:#0b0f1a;         /* deep navy */
+      --fg:#e8eaf1;         /* light text */
+      --muted:#a6b0cf;      /* muted text */
+      --neon1:#62d0ff;      /* cyan */
+      --neon2:#ff4ad8;      /* magenta */
+      --btn-bg:#0f1424;     /* button base */
+      --ring: 0 0 24px rgba(98,208,255,.35), 0 0 48px rgba(255,74,216,.25);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 700px at 80% 10%, rgba(255,74,216,.08), transparent 60%),
+                  radial-gradient(900px 600px at 20% 90%, rgba(98,208,255,.10), transparent 60%),
+                  var(--bg);
+      color:var(--fg);
+      display:flex; align-items:center; justify-content:center;
+      padding:32px;
+    }
+    .card{
+      width:min(560px, 100%);
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:28px; padding:28px; backdrop-filter: blur(8px);
+      box-shadow: 0 20px 60px rgba(0,0,0,.35);
+    }
+    .top{display:flex; gap:18px; align-items:center; margin-bottom:18px}
+    .avatar{
+      width:84px; height:84px; border-radius:22px; flex:0 0 auto;
+      background:#090c16 center/cover no-repeat;
+      border:1px solid rgba(255,255,255,.14);
+      box-shadow: 0 0 0 2px rgba(98,208,255,.18), 0 0 0 6px rgba(255,74,216,.10);
+    }
+    .name{font-weight:800; font-size:clamp(26px, 4.5vw, 34px); letter-spacing:.5px}
+    .tag{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border-radius:999px; font-size:12px; color:var(--muted);
+         background: rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.08)}
+    .bio{color:var(--muted); margin:10px 0 18px; line-height:1.5}
+    .links{display:flex; flex-direction:column; gap:14px}
+    .btn{
+      position:relative; isolation:isolate; display:flex; align-items:center; justify-content:center; gap:12px;
+      width:100%; padding:16px 18px; border-radius:16px; text-decoration:none; color:var(--fg);
+      background: linear-gradient(90deg, rgba(98,208,255,.18), rgba(255,74,216,.18));
+      border:1px solid rgba(255,255,255,.12);
+      box-shadow: var(--ring);
+      transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    .btn:hover{ transform: translateY(-2px); box-shadow: 0 0 30px rgba(98,208,255,.45), 0 0 60px rgba(255,74,216,.35); border-color: rgba(255,255,255,.22) }
+    .btn:active{ transform: translateY(0) scale(.99) }
+    .badge{position:absolute; right:12px; top:12px; font-size:11px; color:#0b0f1a; background:linear-gradient(90deg, var(--neon1), var(--neon2)); padding:4px 8px; border-radius:999px; font-weight:700}
+    .row{display:flex; gap:14px}
+    .row .btn{flex:1}
+    footer{margin-top:18px; display:flex; justify-content:center; font-size:12px; color:var(--muted)}
+    .grad{
+      background: linear-gradient(90deg, var(--neon1), var(--neon2));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+      text-shadow:0 0 12px rgba(98,208,255,.35), 0 0 16px rgba(255,74,216,.25);
+    }
+    @media (max-width:420px){ .row{flex-direction:column} }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <header class="top">
+      <!-- Replace with your logo 1024×1024 PNG path -->
+      <div class="avatar" style="background-image:url('LEON-logo-1024.png');" aria-label="LEØN logo" title="LEØN"></div>
+      <div>
+        <div class="name grad">LEØN</div>
+        <div class="tag" aria-label="Electronic artist">Electronic Music • Dance Genres</div>
+      </div>
+    </header>
+
+    <p class="bio">Electronic music artist exploring different dance genres — Drum’n’Bass, Bass House & more. Debut single <strong>“Madness”</strong> out soon.</p>
+
+    <section class="links" aria-label="Official links">
+      <a class="btn" href="https://www.youtube.com/@LEØNmadnessOfficialChannel" target="_blank" rel="noopener">YouTube — Official Channel <span class="badge">NEW</span></a>
+      <div class="row">
+      </div>
+      <div class="row">
+        <a class="btn" href="https://soundcloud.com/leonmadness" target="_blank" rel="noopener">SoundCloud</a>
+        <a class="btn" href="https://tiktok.com/@leonmadness" target="_blank" rel="noopener">TikTok</a>
+      </div>
+      <a class="btn" href="https://www.instagram.com/leonmadness" target="_blank" rel="noopener">Instagram</a>
+      <!-- Optional: Pre-Save link from distributor -->
+      <a class="btn" href="#" target="_blank" rel="noopener">Pre‑Save “Madness” (Coming Soon)</a>
+    </section>
+
+    <footer>© <span id="y"></span> LEØN — All rights reserved</footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
