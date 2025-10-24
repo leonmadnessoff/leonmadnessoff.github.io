@@ -3,21 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LEØN | Official Links</title>
-  <meta name="description" content="LEØN — Electronic music artist. Drum’n’Bass | Bass House | EDM. Madness is just the beginning."/>
+
+  <title>LEØN | UNDER MY SKIN — Out Nov 7</title>
+  <meta name="description" content="LEØN — Afro House / Melodic club energy. New single ‘Under My Skin’ out Nov 7, 2025. Pre-save now." />
   <link rel="canonical" href="https://leonmadnessoff.github.io/">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="LEØN | Official Links" />
-  <meta property="og:description" content="Electronic music artist. Drum’n’Bass | Bass House | EDM." />
+  <meta property="og:title" content="LEØN — UNDER MY SKIN (Pre-Save)" />
+  <meta property="og:description" content="New Afro House single ‘Under My Skin’. Hypnotic percussion, emotional vibe. Out Nov 7, 2025. Pre-save now." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://leonmadnessoff.github.io/" />
   <meta property="og:image" content="https://leonmadnessoff.github.io/LEON-social-preview.jpg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="LEØN | Official Links" />
-  <meta name="twitter:description" content="Electronic music artist. Drum’n’Bass | Bass House | EDM." />
+  <meta name="twitter:title" content="LEØN — UNDER MY SKIN (Pre-Save)" />
+  <meta name="twitter:description" content="Afro House / Melodic Club Energy. New single ‘Under My Skin’ drops Nov 7, 2025." />
   <meta name="twitter:image" content="https://leonmadnessoff.github.io/LEON-social-preview.jpg" />
 
   <meta name="theme-color" content="#0b0f1a" />
@@ -35,98 +36,241 @@
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
-      margin:0; font-family:system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
-      background: radial-gradient(1200px 700px at 80% 10%, rgba(255,74,216,.08), transparent 60%),
-                  radial-gradient(900px 600px at 20% 90%, rgba(98,208,255,.10), transparent 60%),
-                  var(--bg);
+      margin:0;
+      font-family:system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:
+        radial-gradient(1200px 700px at 80% 10%, rgba(255,74,216,.08), transparent 60%),
+        radial-gradient(900px 600px at 20% 90%, rgba(98,208,255,.10), transparent 60%),
+        var(--bg);
       color:var(--fg);
-      display:flex; align-items:center; justify-content:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
       padding:32px;
     }
     .card{
       width:min(560px, 100%);
       background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
       border:1px solid rgba(255,255,255,.08);
-      border-radius:28px; padding:28px; backdrop-filter: blur(8px);
+      border-radius:28px;
+      padding:28px;
+      backdrop-filter: blur(8px);
       box-shadow: 0 20px 60px rgba(0,0,0,.35);
     }
     .top{display:flex; gap:18px; align-items:center; margin-bottom:18px}
     .avatar{
-      width:84px; height:84px; border-radius:22px; flex:0 0 auto;
+      width:84px;
+      height:84px;
+      border-radius:22px;
+      flex:0 0 auto;
       background:#090c16 center/cover no-repeat;
       border:1px solid rgba(255,255,255,.14);
-      box-shadow: 0 0 0 2px rgba(98,208,255,.18), 0 0 0 6px rgba(255,74,216,.10);
+      box-shadow:
+        0 0 0 2px rgba(98,208,255,.18),
+        0 0 0 6px rgba(255,74,216,.10);
     }
-    .name{font-weight:800; font-size:clamp(26px, 4.5vw, 34px); letter-spacing:.5px}
-    .tag{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border-radius:999px; font-size:12px; color:var(--muted);
-         background: rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.08)}
-    .bio{color:var(--muted); margin:10px 0 18px; line-height:1.5}
+    .name{
+      font-weight:800;
+      font-size:clamp(26px, 4.5vw, 34px);
+      letter-spacing:.5px;
+      line-height:1.15;
+    }
+    .tag{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      color:var(--muted);
+      background: rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.08)
+    }
+    .bio{
+      color:var(--muted);
+      margin:10px 0 18px;
+      line-height:1.5;
+      font-size:15px;
+    }
     .links{display:flex; flex-direction:column; gap:14px}
     .btn{
-      position:relative; isolation:isolate; display:flex; align-items:center; justify-content:center; gap:12px;
-      width:100%; padding:16px 18px; border-radius:16px; text-decoration:none; color:var(--fg);
+      position:relative;
+      isolation:isolate;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:12px;
+      width:100%;
+      padding:16px 18px;
+      border-radius:16px;
+      text-decoration:none;
+      color:var(--fg);
       background: linear-gradient(90deg, rgba(98,208,255,.18), rgba(255,74,216,.18));
       border:1px solid rgba(255,255,255,.12);
       box-shadow: var(--ring);
       transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease;
+      font-weight:600;
+      text-align:center;
     }
-    .btn:hover{ transform: translateY(-2px); box-shadow: 0 0 30px rgba(98,208,255,.45), 0 0 60px rgba(255,74,216,.35); border-color: rgba(255,255,255,.22) }
+    .btn:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 0 30px rgba(98,208,255,.45), 0 0 60px rgba(255,74,216,.35);
+      border-color: rgba(255,255,255,.22)
+    }
     .btn:active{ transform: translateY(0) scale(.99) }
-    .badge{position:absolute; right:12px; top:12px; font-size:11px; color:#0b0f1a; background:linear-gradient(90deg, var(--neon1), var(--neon2)); padding:4px 8px; border-radius:999px; font-weight:700}
+    .badge{
+      position:absolute;
+      right:12px;
+      top:12px;
+      font-size:11px;
+      color:#0b0f1a;
+      background:linear-gradient(90deg, var(--neon1), var(--neon2));
+      padding:4px 8px;
+      border-radius:999px;
+      font-weight:700;
+      line-height:1.2;
+    }
     .row{display:flex; gap:14px}
     .row .btn{flex:1}
-    footer{margin-top:18px; display:flex; justify-content:center; font-size:12px; color:var(--muted)}
+    footer{
+      margin-top:18px;
+      display:flex;
+      justify-content:center;
+      font-size:12px;
+      color:var(--muted)
+    }
     .grad{
       background: linear-gradient(90deg, var(--neon1), var(--neon2));
-      -webkit-background-clip:text; background-clip:text; color:transparent;
-      text-shadow:0 0 12px rgba(98,208,255,.35), 0 0 16px rgba(255,74,216,.25);
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+      text-shadow:
+        0 0 12px rgba(98,208,255,.35),
+        0 0 16px rgba(255,74,216,.25);
     }
-    @media (max-width:420px){ .row{flex-direction:column} }
+    @media (max-width:420px){
+      .row{flex-direction:column}
+      .badge{top:10px; right:10px}
+    }
 
-    /* Spotify-styled CTA */
+    /* Spotify-style CTA for pre-save */
     .btn.presave{
-      background:#1db954; color:#fff; font-weight:800;
-      border: none; box-shadow:0 0 15px rgba(0,0,0,.3);
+      background:#1db954;
+      color:#fff;
+      font-weight:800;
+      border:none;
+      box-shadow:0 0 15px rgba(0,0,0,.3);
     }
-    .btn.presave:hover{ background:#1ed760; box-shadow:0 10px 30px rgba(29,185,84,.35) }
+    .btn.presave:hover{
+      background:#1ed760;
+      box-shadow:0 10px 30px rgba(29,185,84,.35)
+    }
+
+    /* subtle subheader */
+    .section-label{
+      font-size:12px;
+      font-weight:600;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      color:var(--muted);
+      margin:24px 0 4px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    .dot{
+      width:6px;
+      height:6px;
+      border-radius:999px;
+      background:linear-gradient(90deg, var(--neon1), var(--neon2));
+      box-shadow:0 0 8px rgba(98,208,255,.6),0 0 10px rgba(255,74,216,.4);
+    }
   </style>
 </head>
 <body>
   <main class="card" role="main">
     <header class="top">
-      <!-- Replace with your logo 1024×1024 PNG path -->
-      <div class="avatar" style="background-image:url('LEON-logo-1024.png');" aria-label="LEØN logo" title="LEØN"></div>
+      <!-- Replace with your 1024×1024 artist logo -->
+      <div class="avatar"
+           style="background-image:url('LEON-logo-1024.png');"
+           aria-label="LEØN logo"
+           title="LEØN"></div>
+
       <div>
         <div class="name grad">LEØN</div>
-        <div class="tag" aria-label="Electronic artist">Electronic Music • Dance Genres</div>
+        <div class="tag" aria-label="Electronic artist">
+          Afro House • Melodic Club Energy
+        </div>
       </div>
     </header>
 
     <p class="bio">
-      Electronic music artist exploring different dance genres — Drum’n’Bass, Bass House & more.
-      <br>⚡ LEØN — MADNESS ⚡ <br>OUT NOW on all platforms 🎶
+      New single <strong>“UNDER MY SKIN”</strong> — hypnotic Afro House groove,
+      warm percussion, emotional vocal energy.<br/>
+      Drops <strong>Nov&nbsp;7,&nbsp;2025</strong> 🌙🔥
     </p>
 
-    <!-- Pre-Save CTA HIGH -->
     <section class="links" aria-label="Official links">
+      <!-- MAIN CTA: PRE-SAVE -->
       <a class="btn presave"
          href="https://ffm.to/jyyx0y8?utm_source=site&utm_medium=button&utm_campaign=presave_under_my_skin"
          target="_blank" rel="noopener"
          aria-label="Pre-Save Under My Skin on Spotify (Feature.fm)">
         🎧 Pre-Save “Under My Skin”
-        <span class="badge">Oct 31</span>
+        <span class="badge">Nov&nbsp;7</span>
       </a>
 
-      <a class="btn" href="https://www.youtube.com/@LEØNmadnessOfficialChannel" target="_blank" rel="noopener">YouTube — Official Channel <span class="badge">NEW</span></a>
+      <!-- Spotify Artist (not old track link) -->
+      <a class="btn"
+         href="https://open.spotify.com/artist/"
+         target="_blank" rel="noopener"
+         aria-label="LEØN on Spotify">
+        Spotify — Follow LEØN
+      </a>
+
+      <a class="btn"
+         href="https://www.youtube.com/@LEØNmadnessOfficialChannel"
+         target="_blank" rel="noopener"
+         aria-label="YouTube Official Channel">
+        YouTube — Official Channel
+        <span class="badge">NEW</span>
+      </a>
 
       <div class="row">
-        <a class="btn" href="https://soundcloud.com/leonmadness" target="_blank" rel="noopener">SoundCloud</a>
-        <a class="btn" href="https://tiktok.com/@leonmadness" target="_blank" rel="noopener">TikTok</a>
+        <a class="btn"
+           href="https://soundcloud.com/leonmadness"
+           target="_blank" rel="noopener"
+           aria-label="SoundCloud">
+          SoundCloud
+        </a>
+
+        <a class="btn"
+           href="https://tiktok.com/@leonmadness"
+           target="_blank" rel="noopener"
+           aria-label="TikTok">
+          TikTok
+        </a>
       </div>
 
-      <a class="btn" href="https://www.instagram.com/leonmadness" target="_blank" rel="noopener">Instagram</a>
-      <a class="btn" href="https://open.spotify.com/track/5NVeg8DJZdFmNiwYw1EU5k?si=d3710873439649df" target="_blank" rel="noopener">Spotify</a>
-      <a class="btn" href="https://social.tunecore.com/linkShare?linkid=ngqFYVxmIKS40tPxqSZpUQ" target="_blank" rel="noopener">Madness (Out Now)</a>
+      <a class="btn"
+         href="https://www.instagram.com/leonmadness"
+         target="_blank" rel="noopener"
+         aria-label="Instagram">
+        Instagram
+      </a>
+
+      <!-- older single / catalog -->
+      <div class="section-label">
+        <span class="dot"></span>
+        <span>Previous release</span>
+      </div>
+
+      <a class="btn"
+         href="https://social.tunecore.com/linkShare?linkid=ngqFYVxmIKS40tPxqSZpUQ"
+         target="_blank" rel="noopener"
+         aria-label="Madness - listen now">
+        ⚡ “MADNESS” — listen now
+      </a>
     </section>
 
     <footer>© <span id="y"></span> LEØN — All rights reserved</footer>
