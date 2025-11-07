@@ -25,19 +25,18 @@
 
   <style>
     :root{
-      --bg:#0b0f1a;         /* deep navy */
-      --fg:#e8eaf1;         /* light text */
-      --muted:#a6b0cf;      /* muted text */
-      --neon1:#62d0ff;      /* cyan */
-      --neon2:#ff4ad8;      /* magenta */
-      --btn-bg:#0f1424;     /* button base */
+      --bg:#0b0f1a;
+      --fg:#e8eaf1;
+      --muted:#a6b0cf;
+      --neon1:#62d0ff;
+      --neon2:#ff4ad8;
       --ring: 0 0 24px rgba(98,208,255,.35), 0 0 48px rgba(255,74,216,.25);
     }
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
       margin:0;
-      font-family:system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
+      font-family:system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial;
       background:
         radial-gradient(1200px 700px at 80% 10%, rgba(255,74,216,.08), transparent 60%),
         radial-gradient(900px 600px at 20% 90%, rgba(98,208,255,.10), transparent 60%),
@@ -59,115 +58,44 @@
     }
     .top{display:flex; gap:18px; align-items:center; margin-bottom:18px}
     .avatar{
-      width:84px;
-      height:84px;
-      border-radius:22px;
+      width:84px; height:84px; border-radius:22px;
       flex:0 0 auto;
       background:#090c16 center/cover no-repeat;
       border:1px solid rgba(255,255,255,.14);
-      box-shadow:
-        0 0 0 2px rgba(98,208,255,.18),
-        0 0 0 6px rgba(255,74,216,.10);
+      box-shadow:0 0 0 2px rgba(98,208,255,.18),0 0 0 6px rgba(255,74,216,.10);
     }
-    .name{
-      font-weight:800;
-      font-size:clamp(26px, 4.5vw, 34px);
-      letter-spacing:.5px;
-      line-height:1.15;
-    }
-    .tag{
-      display:inline-flex;
-      gap:8px;
-      align-items:center;
-      padding:6px 10px;
-      border-radius:999px;
-      font-size:12px;
-      color:var(--muted);
-      background: rgba(255,255,255,.05);
-      border:1px solid rgba(255,255,255,.08)
-    }
-    .bio{
-      color:var(--muted);
-      margin:10px 0 18px;
-      line-height:1.5;
-      font-size:15px;
-    }
+    .name{font-weight:800; font-size:clamp(26px,4.5vw,34px); letter-spacing:.5px;}
+    .tag{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted); background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.08)}
+    .bio{color:var(--muted); margin:10px 0 18px; line-height:1.5; font-size:15px;}
     .links{display:flex; flex-direction:column; gap:14px}
     .btn{
-      position:relative;
-      isolation:isolate;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:12px;
-      width:100%;
-      padding:16px 18px;
-      border-radius:16px;
-      text-decoration:none;
-      color:var(--fg);
-      background: linear-gradient(90deg, rgba(98,208,255,.18), rgba(255,74,216,.18));
-      border:1px solid rgba(255,255,255,.12);
-      box-shadow: var(--ring);
-      transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease;
-      font-weight:600;
-      text-align:center;
+      display:flex; align-items:center; justify-content:center; gap:12px; width:100%;
+      padding:16px 18px; border-radius:16px; text-decoration:none; color:var(--fg);
+      background:linear-gradient(90deg, rgba(98,208,255,.18), rgba(255,74,216,.18));
+      border:1px solid rgba(255,255,255,.12); box-shadow:var(--ring);
+      transition:transform .15s ease, box-shadow .2s ease, border-color .2s ease;
+      font-weight:600; text-align:center;
     }
-    .btn:hover{
-      transform: translateY(-2px);
-      box-shadow: 0 0 30px rgba(98,208,255,.45), 0 0 60px rgba(255,74,216,.35);
-      border-color: rgba(255,255,255,.22)
-    }
-    .btn:active{ transform: translateY(0) scale(.99) }
+    .btn:hover{transform:translateY(-2px); box-shadow:0 0 30px rgba(98,208,255,.45),0 0 60px rgba(255,74,216,.35); border-color:rgba(255,255,255,.22)}
     .badge{
-      position:absolute;
-      right:12px;
-      top:12px;
-      font-size:11px;
-      color:#0b0f1a;
-      background:linear-gradient(90deg, var(--neon1), var(--neon2));
-      padding:4px 8px;
-      border-radius:999px;
-      font-weight:700;
-      line-height:1.2;
+      position:absolute; right:12px; top:12px; font-size:11px; color:#0b0f1a;
+      background:linear-gradient(90deg,var(--neon1),var(--neon2)); padding:4px 8px; border-radius:999px; font-weight:700;
     }
     .row{display:flex; gap:14px}
     .row .btn{flex:1}
-    footer{
-      margin-top:18px;
-      display:flex;
-      justify-content:center;
-      font-size:12px;
-      color:var(--muted)
-    }
-    .grad{
-      background: linear-gradient(90deg, var(--neon1), var(--neon2));
-      -webkit-background-clip:text;
-      background-clip:text;
-      color:transparent;
-      text-shadow:
-        0 0 12px rgba(98,208,255,.35),
-        0 0 16px rgba(255,74,216,.25);
-    }
-    @media (max-width:420px){
-      .row{flex-direction:column}
-      .badge{top:10px; right:10px}
-    }
+    footer{margin-top:18px; display:flex; justify-content:center; font-size:12px; color:var(--muted)}
+    .grad{background:linear-gradient(90deg,var(--neon1),var(--neon2)); -webkit-background-clip:text; background-clip:text; color:transparent;}
+    @media (max-width:420px){.row{flex-direction:column}}
   </style>
 </head>
 <body>
   <main class="card" role="main">
     <header class="top">
-      <!-- Replace with your 1024×1024 artist logo -->
-      <div class="avatar"
-           style="background-image:url('LEON-logo-1024.png');"
-           aria-label="LEØN logo"
-           title="LEØN"></div>
-
+      <div class="avatar" style="background-image:url('LEON-logo-1024.png');" aria-label="LEØN logo"></div>
       <div>
         <div class="name grad">LEØN</div>
-        <div class="tag" aria-label="Electronic artist">
-          Afro House • Melodic Club Energy
-        </div>
+        <div class="tag">Afro House • Melodic Club Energy</div>
       </div>
     </header>
 
@@ -178,72 +106,48 @@
     </p>
 
     <section class="links" aria-label="Official links">
-      <!-- MAIN CTA: OUT NOW -->
+      <!-- MAIN CTA -->
       <a class="btn"
-         href="https://ffm.to/jyyx0y8?utm_source=site&utm_medium=button&utm_campaign=listen_under_my_skin"
+         href="https://social.tunecore.com/linkShare?linkid=RzgCDUlLazjvtHUtq_BBCQ"
          target="_blank" rel="noopener"
          aria-label="Listen to Under My Skin (Smart Link)">
         🎧 Listen to “Under My Skin”
         <span class="badge">OUT&nbsp;NOW</span>
       </a>
 
-      <!-- Spotify Artist -->
       <a class="btn"
          href="https://open.spotify.com/artist/0Ip8vfEfXes0ZvDNRDrnMd"
-         target="_blank" rel="noopener"
-         aria-label="LEØN on Spotify">
+         target="_blank" rel="noopener">
         Spotify — Follow LEØN
       </a>
 
       <a class="btn"
          href="https://www.youtube.com/@LEØNmadnessOfficialChannel"
-         target="_blank" rel="noopener"
-         aria-label="YouTube Official Channel">
+         target="_blank" rel="noopener">
         YouTube — Official Channel
       </a>
 
       <div class="row">
-        <a class="btn"
-           href="https://soundcloud.com/leonmadness"
-           target="_blank" rel="noopener"
-           aria-label="SoundCloud">
-          SoundCloud
-        </a>
-
-        <a class="btn"
-           href="https://tiktok.com/@leonmadness"
-           target="_blank" rel="noopener"
-           aria-label="TikTok">
-          TikTok
-        </a>
+        <a class="btn" href="https://soundcloud.com/leonmadness" target="_blank" rel="noopener">SoundCloud</a>
+        <a class="btn" href="https://tiktok.com/@leonmadness" target="_blank" rel="noopener">TikTok</a>
       </div>
 
-      <a class="btn"
-         href="https://www.instagram.com/leonmadness"
-         target="_blank" rel="noopener"
-         aria-label="Instagram">
-        Instagram
-      </a>
+      <a class="btn" href="https://www.instagram.com/leonmadness" target="_blank" rel="noopener">Instagram</a>
 
-      <!-- older single / catalog -->
-      <div class="section-label">
-        <span class="dot"></span>
-        <span>Previous release</span>
+      <div class="section-label" style="margin-top:22px;font-size:12px;color:#a6b0cf;text-transform:uppercase;letter-spacing:.08em;">
+        ⚡ Previous release
       </div>
 
       <a class="btn"
          href="https://social.tunecore.com/linkShare?linkid=ngqFYVxmIKS40tPxqSZpUQ"
-         target="_blank" rel="noopener"
-         aria-label="Madness - listen now">
-        ⚡ “MADNESS” — listen now
+         target="_blank" rel="noopener">
+        “MADNESS” — listen now
       </a>
     </section>
 
     <footer>© <span id="y"></span> LEØN — All rights reserved</footer>
   </main>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
